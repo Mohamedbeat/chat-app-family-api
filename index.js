@@ -51,7 +51,7 @@ const server = app.listen(process.env.PORT, ()=>{
 
 const io = new Server(server, {
     cors:{
-        origin:['http://192.168.100.7:5173','http://localhost:5173'],
+        origin:['http://192.168.100.7:5173','http://localhost:5173', 'https://mohamed-chat-app-family.netlify.app'],
         credentials:true,
     }
 })
