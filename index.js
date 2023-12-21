@@ -26,7 +26,7 @@ app.use(express.json())
 //     console.log(err.message);
 // })
 const connectionToDB= async()=>{
-    try {//mongodb+srv://mohamedbeat:mohamedbeat@eagercluster.dqrmwvd.mongodb.net/?retryWrites=true&w=majority
+    try {
         await mongoose.connect(process.env.DB, {
                 useNewUrlParser: true, 
                 useUnifiedTopology: true,
